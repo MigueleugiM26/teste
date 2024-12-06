@@ -6,6 +6,7 @@ from django.views.generic.base import RedirectView
 
 
 urlpatterns = [
+    path('', views.inicio, name='inicio'),
     path('home/', views.inicio, name='inicio'),
     path('categorias/', views.categorias, name='categorias'),
     re_path(r'produtos/?$', views.produtos, name='produtosDefault'), 
